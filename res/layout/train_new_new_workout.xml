@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/home_container" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+	<com.google.android.maps.MapView
+		android:id="@+id/myMapView" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:enabled="true"
+		android:clickable="true" android:apiKey="0KI-fPwPxDQONHSHMrGOuL6ZrK3TuPgK45AfpzA" />
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:orientation="vertical" android:gravity="top"
+		android:paddingLeft="5px" android:paddingTop="5px"
+		android:paddingRight="5px">
+
+		<pl.directsolutions.fit_keeper.model.NewWorkoutBottomPanel
+			android:id="@+id/transparent_panel" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:paddingTop="5px"
+			android:paddingLeft="5px" android:paddingBottom="5px"
+			android:paddingRight="5px">
+
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:orientation="vertical" android:gravity="top">
+
+				<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+
+					<Button android:id="@+id/TrainNewNewWorkoutButton1"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="@string/startJog" android:layout_weight="1" />
+
+					<Button android:id="@+id/TrainNewNewWorkoutButton2"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="@string/stopJog" android:layout_weight="1"/>
+
+					<Button android:id="@+id/TrainNewNewWorkoutButton3"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="@string/saveJog" android:layout_weight="1"/>
+				</LinearLayout>
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:orientation="horizontal">
+					<TextView android:id="@+id/NewDistanceTextView"
+						android:layout_width="wrap_content" android:layout_height="wrap_content" />
+					<TextView android:id="@+id/NewTimeTextView"
+						android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="right"/>
+				</LinearLayout>
+
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:orientation="horizontal">
+					<TextView android:id="@+id/NewRapidityTextView"
+						android:layout_width="wrap_content" android:layout_height="wrap_content" />
+					<TextView android:id="@+id/NewCaloriesTextView"
+						android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="right"/>
+				</LinearLayout>
+
+			</LinearLayout>
+			</LinearLayout>
+		</pl.directsolutions.fit_keeper.model.NewWorkoutBottomPanel>
+
+	</LinearLayout>
+</FrameLayout>

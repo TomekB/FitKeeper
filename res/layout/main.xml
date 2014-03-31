@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/back"
+	android:padding="5dp" >
+
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_gravity="top">
+
+		<Button android:id="@+id/MainButton01" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="@string/MainButton01" />
+
+		<Button android:id="@+id/MainButton02" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="@string/MainButton02"
+			android:paddingTop="5dp" />
+	</LinearLayout>
+
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_gravity="bottom">
+
+		<Button android:id="@+id/MainButton03" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="@string/MainButton03" />
+
+		<Button android:id="@+id/MainButton04" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="@string/MainButton04"
+			android:paddingTop="5dp" />
+	</LinearLayout>
+
+</FrameLayout>

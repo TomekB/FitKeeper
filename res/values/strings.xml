@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, Main!</string>
+	<string name="app_name">FitKeeper</string>
+	<string name="MainButton01">SCAN BARCODE</string>
+	<string name="MainButton02">SEARCH PRODUCT</string>
+	<string name="MainButton03">ANALIZE DIET</string>
+	<string name="MainButton04">TRAINING</string>
+	<string name="startJog">START</string>
+	<string name="stopJog">STOP</string>
+	<string name="pauseJog">PAUSE</string>
+	<string name="resumeJog">RESUME</string>
+	<string name="saveJog">SAVE</string>
+
+	<string name="barcode_string">Barcode: </string>
+	<string name="product_string">Name:</string>
+	<string name="protein_string">Protein:</string>
+	<string name="carbohydrates_string">Carbohydrates:</string>
+	<string name="fat_string">Fat:</string>
+	<string name="calories_string">Calories:</string>
+	<string name="amount_string">Amount:</string>
+	<string name="product_amount_spinner_prompt">Amount of consumed product:</string>
+	<string name="add_to_database_button_string">add to database</string>
+	<string name="add_to_diet_button_string">add to diet</string>
+	<string name="cancel_button_string">cancel</string>
+	<string name="product_values_prompt_string">Values per</string>
+	<string name="barcode_found_header">Barcode found, type in amount.</string>
+	<string name="barcode_not_found_header">Barcode not found, type in values and add to
+		database.</string>
+	<string name="value_per_hint1">in</string>
+	<string name="value_per_hint2">per</string>
+	<string name="type_in_product_name_hint">Type in product name</string>
+	<string name="search_button_string">  search  </string>
+
+	<string name="preferences_actions_title">When a barcode is found\u2026</string>
+	<string name="preferences_copy_to_clipboard_title">Copy to clipboard</string>
+	<string name="preferences_decode_1D_title">Decode 1D barcodes</string>
+	<string name="preferences_decode_QR_title">Decode QR Codes</string>
+	<string name="preferences_general_title">General settings</string>
+	<string name="preferences_name">Settings</string>
+	<string name="preferences_play_beep_title">Beep</string>
+	<string name="preferences_vibrate_title">Vibrate</string>
+	<string name="preferences_result_title">Result settings</string>
+	<string name="preferences_custom_product_search_title">Custom search URL</string>
+	<string name="preferences_custom_product_search_summary">Use %s as a placeholder for the product ID</string>
+	<string name="zxing_url">http://code.google.com/p/zxing</string>
+	<string name="msg_default_status">Place a barcode inside the viewfinder rectangle to
+		scan it.</string>
+	<string name="msg_default_format">Format</string>
+	<string name="msg_default_mms_subject">Hi</string>
+	<string name="msg_default_type">Type</string>
+	<string name="msg_default_contents">Contents</string>
+	
+	<string name="delete_question">Are you sure you want to delete?</string>
+	<string name="positive_string">Yes</string>
+	<string name="negative_string">No</string>
+	<string name="no_product_found">No product found.</string>
+	<string name="add_product">Add product</string>
+	<string name="show_all_products">Show all products</string>
+	<string name="date_string">Date:</string>
+	<string name="no_barcode">No barcode!</string>
+	<string name="change_day">Check another day</string>
+	<string name="configure_diet">Configure diet</string>
+	<string name="configure_diet_header">Daily diet requirement</string>
+	<string name="save_button_string">SAVE</string>
+	<string name="automatic_calculation_button_string">AUTO CALCULATE</string>
+	<string name="suggest_meal">Suggest proper meal</string>
+	<string name="train_history_button_string">Look around You</string>
+	
+	<string name="connection_GPS_dialog_text">The GPS location can not be updated... \nIf you continue it could be that the Information 
+		\nwill not be displayed in the right place.</string>
+	
+	<string name="help_tips">To achieve good results You can:\n\n	
+	1. Reduce workout to 30-40 minutes (longer workout can cause muscle burning)\n\n
+	2. Warm-up!  It is essential to prepare the muscles, warm-up about 5 minutes to prevent injuries.\n\n
+	3. Cool down! After workout spend additional 5 minutes for slow jogging in order to remove lactic acid which can cause cramps and stiffness.\n\n
+	4. Eat more proteins! They help build muscles, drink one protein shake before and one after the workout.\n\n
+	5. Listen to your body! When you feel pain in your chest area stop running and walk until You feel better.\n\n
+	6. Don\'t expect results after one week, it will take about one month until You see results, but belive me it\'s worth waiting!\n\n
+	7. Train with friend! There is no better motivator than another person! 
+	</string>
+</resources>

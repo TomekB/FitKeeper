@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ScrollView android:id="@+id/widget54" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/back">
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:paddingTop="5dip">
+
+			<TextView android:text="@string/barcode_string"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textColor="#ffffff" />
+
+			<TextView android:id="@+id/barcodeValueTextView"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:textColor="#ffffff" />
+		</LinearLayout>
+
+		<TextView android:id="@+id/chooseAmountHeaderTextView"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:padding="5dip" android:textColor="#ffffff" />
+
+		<LinearLayout android:id="@+id/barcode_found_view"
+			android:orientation="vertical" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:visibility="gone"
+			android:padding="4dip">
+
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:paddingTop="5dip">
+
+				<TextView android:text="@string/product_string"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textColor="#ffffff" />
+
+				<TextView android:id="@+id/productNameValueTextView"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="right" android:textColor="#ffffff" />
+
+			</LinearLayout>
+
+			<TableLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:stretchColumns="1">
+				<TableRow>
+					<TextView android:text="@string/protein_string"
+						android:padding="3dip" android:textColor="#ffffff" />
+
+					<TextView android:id="@+id/proteinValueTextView"
+						android:gravity="right" android:padding="3dip" android:textColor="#ffffff" />
+				</TableRow>
+
+				<TableRow>
+					<TextView android:text="@string/carbohydrates_string"
+						android:padding="3dip" android:textColor="#ffffff" />
+
+					<TextView android:id="@+id/carbohydratesValueTextView"
+						android:gravity="right" android:padding="3dip" android:textColor="#ffffff" />
+				</TableRow>
+
+				<TableRow>
+					<TextView android:text="@string/fat_string"
+						android:padding="3dip" android:textColor="#ffffff" />
+
+					<TextView android:id="@+id/fatValueTextView"
+						android:gravity="right" android:padding="3dip" android:textColor="#ffffff" />
+				</TableRow>
+
+				<TableRow>
+					<TextView android:text="@string/calories_string"
+						android:padding="3dip" android:textColor="#ffffff" />
+
+					<TextView android:id="@+id/caloriesValueTextView"
+						android:gravity="right" android:padding="3dip" android:textColor="#ffffff" />
+				</TableRow>
+
+				<TableRow>
+					<TextView android:text="@string/amount_string"
+						android:padding="3dip" android:textColor="#ffffff" />
+
+					<EditText android:id="@+id/amountValueEditText"
+						android:lines="1" android:inputType="number" />
+				</TableRow>
+
+			</TableLayout>
+
+		</LinearLayout>
+
+
+		<LinearLayout android:id="@+id/barcode_not_found_view"
+			android:orientation="vertical" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:visibility="gone"
+			android:padding="4dip">
+
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:paddingTop="5dip">
+
+				<TextView android:text="@string/product_string"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textColor="#ffffff" />
+
+				<EditText android:id="@+id/productNameEditText"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:hint="@string/type_in_product_name_hint" />
+			</LinearLayout>
+
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:paddingTop="5dip">
+
+				<TextView android:text="@string/product_values_prompt_string"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textColor="#ffffff" />
+
+				<EditText android:id="@+id/amountValuesForInputEditBox"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:inputType="number" android:hint="100" />
+
+				<RadioGroup android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:orientation="vertical">
+					<RadioButton android:id="@+id/radioButtonLeft"
+						android:layout_width="wrap_content" android:layout_height="wrap_content" />
+					<RadioButton android:id="@+id/radioButtonRight"
+						android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				</RadioGroup>
+
+			</LinearLayout>
+
+			<TableLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:stretchColumns="1">
+				<TableRow>
+					<TextView android:text="@string/protein_string"
+						android:padding="3dip" android:textColor="#ffffff" />
+
+					<EditText android:id="@+id/proteinValueEditText"
+						android:padding="3dip" android:lines="1" android:inputType="numberDecimal" />
+				</TableRow>
+
+				<TableRow>
+					<TextView android:text="@string/carbohydrates_string"
+						android:padding="3dip" android:textColor="#ffffff" />
+
+					<EditText android:id="@+id/carbohydratesValueEditText"
+						android:padding="3dip" android:lines="1" android:inputType="numberDecimal" />
+				</TableRow>
+
+				<TableRow>
+					<TextView android:text="@string/fat_string"
+						android:padding="3dip" android:textColor="#ffffff" />
+
+					<EditText android:id="@+id/fatValueEditText"
+						android:padding="3dip" android:lines="1" android:inputType="numberDecimal" />
+				</TableRow>
+
+				<TableRow>
+					<TextView android:text="@string/calories_string"
+						android:padding="3dip" android:textColor="#ffffff" />
+
+					<EditText android:id="@+id/caloriesValueEditText"
+						android:padding="3dip" android:lines="1" android:inputType="numberDecimal" />
+				</TableRow>
+			</TableLayout>
+
+		</LinearLayout>
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal">
+
+			<Button android:id="@+id/cancelButton" android:text="@string/cancel_button_string"
+				android:layout_weight="1" android:padding="5dp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+			<Button android:id="@+id/addButton" android:padding="5dp"
+				android:layout_weight="1" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+
+	</LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="pl.directsolutions.fit_keeper" android:versionCode="1" android:versionName="1.0">
+	<application android:icon="@drawable/icon" android:label="@string/app_name">
+		<activity android:name=".view.MainActivity" android:label="@string/app_name" android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".view.TrainActivity" android:screenOrientation="portrait"/>
+		<activity android:name=".view.NewTrainingActivity" android:screenOrientation="portrait"/>
+		<activity android:name=".view.TrainHistoryActivity" android:screenOrientation="portrait"/>
+		<activity android:name=".view.TrainSettingsActivity" android:screenOrientation="portrait"/>
+		<activity android:name=".view.TrainHelpActivity" android:screenOrientation="portrait"/>
+		<activity android:name=".view.UserSettingsActivity" android:screenOrientation="portrait"/>
+		<activity android:name=".view.NotificationSettingsActivity" android:screenOrientation="portrait"/>
+		<activity android:name=".view.RaceAgainstYourselfListActivity" android:screenOrientation="portrait"/>
+
+		<activity android:name=".view.RaceAgainstYourselfActivity"
+			android:screenOrientation="portrait" />
+
+		<activity android:name=".view.NewWorkoutActivity"
+			android:screenOrientation="portrait" />
+
+		<activity android:name=".view.HistoricalWorkoutActivity"
+			android:screenOrientation="portrait" />
+
+		<activity android:name=".view.ChooseAmountOfScannedActivity"
+			android:screenOrientation="portrait" />
+
+		<activity android:name=".view.ChooseAmountOfNotScannedActivity"
+			android:screenOrientation="portrait" />
+
+		<activity android:name=".view.ManualProductSearchActivity"
+			android:screenOrientation="portrait" />
+
+		<activity android:name=".view.DietAnalyzeActivity"
+			android:screenOrientation="portrait" />
+
+		<activity android:name=".view.ConfigureDietActivity"
+			android:screenOrientation="portrait" />
+			
+		<activity android:name=".scanner.CaptureActivity"
+			android:screenOrientation="landscape" android:configChanges="orientation|keyboardHidden"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+		</activity>
+
+		<activity android:label="@string/app_name" android:name=".augmented_reality.MixView"
+			android:screenOrientation="landscape">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:scheme="http" android:mimeType="application/mixare-json" />
+				<data android:scheme="content" android:mimeType="application/mixare-json" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".augmented_reality.AugmentedMap"/>
+		<uses-library android:name="com.google.android.maps" />
+
+	</application>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.FLASHLIGHT" />
+		<uses-permission android:name="android.permission.WAKE_LOCK" />
+
+</manifest> 

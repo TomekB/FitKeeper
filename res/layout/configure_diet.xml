@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ScrollView android:id="@+id/widget54" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/back">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+			<TextView android:text="@string/configure_diet_header"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textColor="#ffffff" />
+
+			<TableLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:stretchColumns="1">
+				<TableRow>
+					<TextView android:text="@string/protein_string"
+						android:padding="3dip" android:textColor="#ffffff" />
+
+					<EditText android:id="@+id/proteinValueEditText"
+						android:padding="3dip" android:lines="1" android:inputType="numberDecimal" />
+				</TableRow>
+
+				<TableRow>
+					<TextView android:text="@string/carbohydrates_string"
+						android:padding="3dip" android:textColor="#ffffff" />
+
+					<EditText android:id="@+id/carbohydratesValueEditText"
+						android:padding="3dip" android:lines="1" android:inputType="numberDecimal" />
+				</TableRow>
+
+				<TableRow>
+					<TextView android:text="@string/fat_string"
+						android:padding="3dip" android:textColor="#ffffff" />
+
+					<EditText android:id="@+id/fatValueEditText"
+						android:padding="3dip" android:lines="1" android:inputType="numberDecimal" />
+				</TableRow>
+
+				<TableRow>
+					<TextView android:text="@string/calories_string"
+						android:padding="3dip" android:textColor="#ffffff" />
+
+					<EditText android:id="@+id/caloriesValueEditText"
+						android:padding="3dip" android:lines="1" android:inputType="numberDecimal" />
+				</TableRow>
+			</TableLayout>
+
+		</LinearLayout>
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+				<Button android:id="@+id/saveButton" android:text="@string/save_button_string" android:layout_weight="1"
+					android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+				<Button android:id="@+id/calculateButton" android:padding="5dp" android:layout_weight="1"
+					android:text="@string/automatic_calculation_button_string" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

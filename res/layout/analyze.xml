@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/back">
+
+<TextView android:id="@+id/AnalyzeTextView"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#ffffff" android:textSize="18dp" android:layout_gravity="center"/>
+		
+	<TableLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:stretchColumns="1">
+		<TableRow>
+			<TextView android:text="@string/protein_string"
+				android:padding="3dip" android:textColor="#ffffff" />
+
+			<EditText android:id="@+id/proteinValueEditText"
+				android:padding="3dip" android:lines="1" android:editable="false" android:enabled="false" android:textColor="#ffffff"/>
+		</TableRow>
+
+		<TableRow>
+			<TextView android:text="@string/carbohydrates_string"
+				android:padding="3dip" android:textColor="#ffffff" />
+
+			<EditText android:id="@+id/carbohydratesValueEditText"
+				android:padding="3dip" android:lines="1" android:editable="false" android:enabled="false" android:textColor="#ffffff"/>
+		</TableRow>
+
+		<TableRow>
+			<TextView android:text="@string/fat_string" android:padding="3dip"
+				android:textColor="#ffffff" />
+
+			<EditText android:id="@+id/fatValueEditText"
+				android:padding="3dip" android:lines="1" android:editable="false" android:enabled="false" android:textColor="#ffffff"/>
+		</TableRow>
+
+		<TableRow>
+			<TextView android:text="@string/calories_string"
+				android:padding="3dip" android:textColor="#ffffff" />
+
+			<EditText android:id="@+id/caloriesValueEditText"
+				android:padding="3dip" android:lines="1" android:editable="false" android:enabled="false" android:textColor="#ffffff" />
+		</TableRow>
+	</TableLayout>
+
+	<ListView android:id="@+id/AnalyzeList" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:drawSelectorOnTop="false"
+		android:cacheColorHint="#00000000" />
+
+</LinearLayout>
